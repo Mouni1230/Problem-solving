@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    int w;
+    printf("enter weight:",w);
+    scanf("%d",&w);
+    if(w<=0)
+    {
+        printf("Time estimated: 0 minutes");
+    }
+    else if(w>0 &&w <=2000)
+    {
+        printf("Time estimated: 25 minutes");
+    }
+    else if(w>2000 && w<=4000)
+    {
+        printf("Time estimated: 35 minutes");
+    }
+    else if(w>4000 && w<=7000)
+    {
+        printf("Time estimated: 45 minutes");
+    }
+    else
+    {
+        printf("INVALID INPUT");
+    }
+    return 0;
+}
