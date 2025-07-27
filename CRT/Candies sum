@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,k;
+    int sale;
+    printf("enter numkber of candies:");
+    scanf("%d %d %d",&n,&k,&sale);
+    if(sale>=1 && sale<=n-k)
+    {
+       printf("number of candies sold:%d",sale);
+       printf("left:%d",n-sale);
+    }
+    else
+    {
+        printf("INVALID");
+    }
+  
+
+    return 0;
+}
