@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+	int n,o,d,l,swap;
+	printf("Enter the number:");
+	scanf("%d",&n);
+	d=(int)log10(n);
+	o=n/pow(10,d);
+	l=n%10;
+	swap=l* pow(10,d)+(n%(int)pow(10,d)-l)+o;
+	printf("%d",swap);
+	return 0;
+}
